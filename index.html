@@ -16,9 +16,18 @@
       <h1>Summer activities report</h1>
       <span>Yana and Natalia</span>
     </div>
-    <div class="container">
+
+    <div class="container " id = "person1">
       <span>Please enter activities that you completed and the hours that each one took</span>
       <div class="input-group mb-3">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="text pr-5" id="basic-addon1">Name</span>
+          </div>
+          <div class="row">
+            <input type="text" id="activity2" class="col-lg-8 d-inline activity" placeholder="Name" aria-label="Activity" aria-describedby="basic-addon1">
+        </div>
+        </div>
         <div class="input-group-prepend">
           <span class="text pr-5" id="basic-addon1">Activity 1</span>
         </div>
@@ -27,6 +36,7 @@
           <input type="text" id="hours1" class="col-lg-4 d-inline" placeholder="Hours" aria-label="Hours" aria-describedby="basic-addon1">
       </div>
       </div>
+
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="text pr-5" id="basic-addon1">Activity 2</span>
@@ -68,6 +78,8 @@
         <!-- <button type="button mr-5" id="next" class="btn btn-danger ml-3">Save</button> -->
         <button type="button mr-5" id="next" class="btn btn-success ml-3">Next person</button>
       
+        
+        
     <!-- Results -->
       <div class="container">
         <div id="results"></div>

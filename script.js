@@ -1,25 +1,28 @@
 
+
 let activities = [];
-
-
-// $('#total').click(function(totalHours){
-//   alert("The total hours are" + totalHours)
-//   console.log('the button is working');
-// });
-
-
-
+let hours = [];
   
+$('#person2').hide();
   $('#save').click(function(){
     getActivities();
+    getHours();
     for(let i = 0; i < activities.length; i++) {
       if(activities[i] == ''){
          alert('Input can not be left blank');
-         return false;
       }
       else{
-        return true;
+        return activities;
       }
+    }
+    
+    for (let i = 0; i < activities.length; i++){
+      if(hours[i] == ''){
+        alert('Input can not be left blank');
+     }
+     else{
+       return hours;
+     }
     }
   });
 
@@ -38,13 +41,20 @@ function getActivities(){
   console.log(activities);
 }
 
-
 function getHours(){
   let hours1 = document.getElementById('hours1').value;
   let hours2 = document.getElementById('hours2').value;
   let hours3 = document.getElementById('hours3').value;
   let hours4 = document.getElementById('hours4').value;
   let hours5 = document.getElementById('hours5').value;
-  let totalHours = hours1 + hours2 + hours3 + hours4 + hours5;
-  console.log(totalHours);
+  hours.push(hours1);
+  hours.push(hours2);
+  hours.push(hours3);
+  hours.push(hours4);
+  hours.push(hours5);
+  console.log(hours);
 }
+
+// function showResults(){
+//   for 
+// }
